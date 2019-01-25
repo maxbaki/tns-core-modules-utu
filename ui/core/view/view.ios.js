@@ -265,12 +265,18 @@ var View = (function (_super) {
             }
             this.viewController = controller;
         }
-        this._setupAsRootView({});
-        if (fullscreen) {
+        this._setupAsRootView({});        
+        /*if (fullscreen) {
             controller.modalPresentationStyle = 0;
         }
         else {
             controller.modalPresentationStyle = 2;
+        }*/
+        if (fullscreen) {
+            controller.modalPresentationStyle = 5;
+        }
+        else {
+            controller.modalPresentationStyle = 5;
         }
         this.horizontalAlignment = "stretch";
         this.verticalAlignment = "stretch";
